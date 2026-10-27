@@ -26,8 +26,8 @@ export const site = {
   whatsappHref:
     'https://wa.me/2347057171227?text=' +
     encodeURIComponent('Hi Ifeoluwa, I found your site and would like to talk.'),
-  /** Public site URL (Cloudflare / reinoxlabs) */
-  url: 'https://ifeoluwa.reinoxlabs.com',
+  /** Public site URL (Cloudflare Pages) */
+  url: 'https://ifeoluwa.pages.dev',
   nav: [
     { label: 'Work', href: '/#work' },
     { label: 'Approach', href: '/#approach' },

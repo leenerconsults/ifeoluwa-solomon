@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "pages:deploy": "npm run build && wrangler pages deploy dist --project-name=ifeoluwa-solomon"
+    "pages:deploy": "npm run build && wrangler pages deploy dist --project-name=ifeoluwa"
   },
   "engines": {
     "node": ">=20"
