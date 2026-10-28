@@ -199,26 +199,24 @@ export const projects: WorkProject[] = [
       context:
         'Cement, NASCON, and other BUs each have their own sites. Investor docs, updates, and figures still need to stay consistent. The Hub and Nest API became the single source of truth; BU investor pages embed that content instead of maintaining parallel stacks.',
       approach: [
-        'Ship investors.dangote.com as the primary IR experience: investment case, financials, governance, ESG, shareholder tools.',
-        'Surface live NGX quotes for listed BUs (Cement, Sugar, NASCON) on the Hub home.',
+        'Ship investors.dangote.com as the primary IR experience.',
         'Run investor content through an IR Nest API: documents, updates, figures, and related IR data as SSOT.',
         'Build embeddable widgets so BU standalone investor pages fetch live from that API.',
         'Give admins login to publish and update once; embeds refresh across the Hub and BU surfaces.',
       ],
       shipped: [
         'Live IR hub at investors.dangote.com',
-        'Live NGX quote cards for listed BUs',
         'IR Nest API (SSOT for investor content)',
         'Embeddable widgets for BU investor pages',
         'Admin login for ongoing updates',
       ],
       outcome:
-        'A production IR surface that looks and behaves like a listed-group investor centre, while BU pages pull documents, updates, and figures from Nest API embeds kept in sync from one admin workflow.',
+        'BU investor pages do not maintain a parallel content stack. They pull documents, updates, and figures from the Nest API embeds, kept in sync from one admin workflow.',
     },
     featured: true,
     status: 'live',
     category: 'corporate-ir',
-    tags: ['IR', 'Nest API', 'SSOT', 'Embed', 'NGX', 'Admin'],
+    tags: ['IR', 'Nest API', 'SSOT', 'Embed', 'Admin'],
   },
   {
     slug: 'bukihq',
