@@ -79,18 +79,19 @@ export const projects: WorkProject[] = [
     kind: 'campaign',
     angle: 'National-scale offer infrastructure.',
     useCase:
-      'Public-offer campaign site: educate, route, and convert retail and institutional investors at national scale.',
+      'Public-offer campaign site: educate, route, and convert at national scale, then carry investors through close and allotment.',
     summary:
-      'Full investor-information webapp under live offer pressure: education, prospectus, channels, anti-fraud, and partner landings.',
+      'Full investor-information webapp under live offer pressure: education, prospectus, channels, anti-fraud, partner landings, and post-close next-steps.',
     caseStudy: {
-      goal: 'Give every eligible investor a clear, trusted path from curiosity to an approved subscription channel, at the scale of a landmark African energy IPO.',
+      goal: 'Give every eligible investor a clear, trusted path from curiosity to an approved subscription channel, then through close and allotment, at the scale of a landmark African energy IPO.',
       context:
-        'The offer demanded a surface that could teach, reassure, and route millions of visitors while staying aligned with issuing houses, regulators, and a constantly moving partner channel list. This was campaign infrastructure, not a static brochure.',
+        'The offer demanded a surface that could teach, reassure, and route millions of visitors while staying aligned with issuing houses, regulators, and a constantly moving partner channel list. After close, the same surface had to shift into allotment and next-steps without losing trust. This was campaign infrastructure, not a static brochure.',
       approach: [
         'Lead with offer clarity: price, minimums, dates, and what “subscribe” actually means.',
         'Build channel systems for banks, apps, and international routes, with featured strips that could change without a full redesign.',
         'Treat fraud and safety as first-class UX: warnings, approved-channel discipline, and support paths.',
         'Ship partner landing kits and digital ops (WhatsApp, /digital, noindex rules) so the campaign could run day to day.',
+        'Flip the hero and CTAs for post-close: thank-you narrative, allotment progress, prospectus, and share/refund support.',
       ],
       shipped: [
         'Live campaign site at ipo.dangote.com',
@@ -98,9 +99,10 @@ export const projects: WorkProject[] = [
         'Subscription channel architecture (domestic + international)',
         'Anti-fraud messaging and investor support surfaces',
         'Partner landing kit and digital ops tooling',
+        'Post-close / allotment state with next-steps and support chat',
       ],
       outcome:
-        'A production campaign platform that held under national attention, regulatory scrutiny, and continuous channel updates through the offer window.',
+        'A production campaign platform that held under national attention through the offer window and into allotment, with continuous channel and messaging updates under regulatory scrutiny.',
     },
     featured: true,
     status: 'live',
@@ -197,24 +199,26 @@ export const projects: WorkProject[] = [
       context:
         'Cement, NASCON, and other BUs each have their own sites. Investor docs, updates, and figures still need to stay consistent. The Hub and Nest API became the single source of truth; BU investor pages embed that content instead of maintaining parallel stacks.',
       approach: [
-        'Ship investors.dangote.com as the primary IR experience.',
+        'Ship investors.dangote.com as the primary IR experience: investment case, financials, governance, ESG, shareholder tools.',
+        'Surface live NGX quotes for listed BUs (Cement, Sugar, NASCON) on the Hub home.',
         'Run investor content through an IR Nest API: documents, updates, figures, and related IR data as SSOT.',
         'Build embeddable widgets so BU standalone investor pages fetch live from that API.',
         'Give admins login to publish and update once; embeds refresh across the Hub and BU surfaces.',
       ],
       shipped: [
         'Live IR hub at investors.dangote.com',
+        'Live NGX quote cards for listed BUs',
         'IR Nest API (SSOT for investor content)',
         'Embeddable widgets for BU investor pages',
         'Admin login for ongoing updates',
       ],
       outcome:
-        'BU investor pages do not maintain a parallel content stack. They pull documents, updates, and figures from the Nest API embeds, kept in sync from one admin workflow.',
+        'A production IR surface that looks and behaves like a listed-group investor centre, while BU pages pull documents, updates, and figures from Nest API embeds kept in sync from one admin workflow.',
     },
     featured: true,
     status: 'live',
     category: 'corporate-ir',
-    tags: ['IR', 'Nest API', 'SSOT', 'Embed', 'Admin'],
+    tags: ['IR', 'Nest API', 'SSOT', 'Embed', 'NGX', 'Admin'],
   },
   {
     slug: 'bukihq',
